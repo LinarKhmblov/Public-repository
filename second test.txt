@@ -1,3 +1,0 @@
-Checking
-test failed
-success
