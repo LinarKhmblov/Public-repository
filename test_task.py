@@ -11,7 +11,7 @@ total_price = 0
 for i in range(number_of_tickets):
     i += 1
     while True:
-        age_of_the_visitor = int(input(f'Ведите возраст {i}-го посетителя: '))
+        age_of_the_visitor = int(input(f'Введите возраст {i}-го посетителя: '))
         if age_of_the_visitor < 18:
             print('Вход бесплатный!')
         elif 18 <= age_of_the_visitor < 25:
@@ -23,7 +23,7 @@ for i in range(number_of_tickets):
         if type(age_of_the_visitor) == int:
             break
 if total_price == 0:
-    print("Вам повезло! Вход для Вас беспалтный!")
+    print("Вам повезло! Вход для Вас бесплатный!")
 elif number_of_tickets >= 4:
     total_price = total_price - ((total_price / 100) * 10)
     print(f"Общая стоимость билетов с учётом скидки - {total_price} руб. ")
