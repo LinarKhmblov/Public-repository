@@ -18,13 +18,14 @@ for i in range(number_of_tickets):
             total_price += 990
             print('Цена за вход - 990 руб.')
         else:
-            total_price += 1360
-            print('Цена за вход - 1390')
+            total_price += 1390
+            print('Цена за вход - 1390 руб.')
         if type(age_of_the_visitor) == int:
             break
-
-if number_of_tickets >= 4:
+if total_price == 0:
+    print("Вам повезло! Вход для Вас беспалтный!")
+elif number_of_tickets >= 4:
     total_price = total_price - ((total_price / 100) * 10)
     print(f"Общая стоимость билетов с учётом скидки - {total_price} руб. ")
 else:
-    print(f"Итого за билеты - {total_price} руб. ")
+    print(f"Итого к оплате - {total_price} руб. ")
